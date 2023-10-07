@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Practice_page2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/e2f990d263.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="instagram.svg"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Instagram
+        </a>
+
+        <!-- Button trigger modal -->
+
+        <div class="hstack gap-2">
+          <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Create a new post
+          </button>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="gear-fill.svg">
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" style="color:red" href="#">Log Out</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Create a new post
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="message-text" class="col-form-label"
+                      >Caption:</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message-text"
+                      placeholder="Add the caption of your post here"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-success">
+                  Publish
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="page_2.html">
+            <img
+              src="square-fill.svg"
+              alt="square-fill"
+              width="30"
+              height="24"
+            />
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <img
+              src="grid-3x3-gap.svg"
+              alt="grid-3x3-gap"
+              width="30"
+              height="24"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mx-auto p-3" style="width: 550px;">            
+        <div class="card mb-1" style="width:35rem">
+            <div class="card-body">
+                <h4 class="card-title">Beautiful Day!!</h4>
+            </div>
+        <img src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE" class="card-img-bottom" alt="...">
+                    <p class="card-text p-1"><strong>204 Likes</strong></p>
+                    <p class="card-text pb-2">This is an example of a very good photo that yoy can post o instagram</p>
+        </div>
+    </div>
+    <div class="mx-auto p-3" style="width: 550px;">            
+      <div class="card mb-1" style="width:35rem">
+          <div class="card-body">
+              <h4 class="card-title">Beach's Day!!!!</h4>
+          </div>
+      <img src="https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w" class="card-img-bottom" alt="...">
+                  <p class="card-text p-1"><strong>204 Likes</strong></p>
+                  <p class="card-text pb-2">This is an example of a very good photo that yoy can post o instagram</p>
+      </div>
+  </div>
+  <div class="mx-auto p-3" style="width: 550px;">            
+    <div class="card mb-1" style="width:35rem">
+        <div class="card-body">
+            <h4 class="card-title">Appreciating the little things...</h4>
+        </div>
+    <img src="https://fastly.picsum.photos/id/18/2500/1667.jpg?hmac=JR0Z_jRs9rssQHZJ4b7xKF82kOj8-4Ackq75D_9Wmz8" class="card-img-bottom" alt="...">
+                <p class="card-text p-1"><strong>204 Likes</strong></p>
+                <p class="card-text pb-2">This is an example of a very good photo that yoy can post o instagram</p>
+    </div>
+</div>
+</div>
+<div class="mx-auto p-3" style="width: 550px;">            
+  <div class="card mb-1" style="width:35rem">
+      <div class="card-body">
+          <h4 class="card-title">Some times what you need is a coffee</h4>
+      </div>
+  <img src="https://fastly.picsum.photos/id/42/3456/2304.jpg?hmac=dhQvd1Qp19zg26MEwYMnfz34eLnGv8meGk_lFNAJR3g" class="card-img-bottom" alt="...">
+              <p class="card-text p-1"><strong>204 Likes</strong></p>
+              <p class="card-text pb-2">This is an example of a very good photo that yoy can post o instagram</p>
+  </div>
+</div>
+<div class="mx-auto p-3" style="width: 550px;">            
+  <div class="card mb-1" style="width:35rem">
+      <div class="card-body">
+          <h4 class="card-title">Beautiful girl in the sun..</h4>
+      </div>
+  <img src="https://fastly.picsum.photos/id/65/4912/3264.jpg?hmac=uq0IxYtPIqRKinGruj45KcPPzxDjQvErcxyS1tn7bG0" class="card-img-bottom" alt="...">
+              <p class="card-text p-1"><strong>204 Likes</strong></p>
+              <p class="card-text pb-2">This is an example of a very good photo that yoy can post o instagram</p>
+  </div>
+</div>
+<div class="mx-auto p-3" style="width: 550px;">            
+  <div class="card mb-1" style="width:35rem">
+      <div class="card-body">
+          <h4 class="card-title">As calm as the sea...</h4>
+      </div>
+  <img src="https://fastly.picsum.photos/id/74/4288/2848.jpg?hmac=q02MzzHG23nkhJYRXR-_RgKTr6fpfwRgcXgE0EKvNB8" class="card-img-bottom" alt="...">
+              <p class="card-text p-1"><strong>204 Likes</strong></p>
+              <p class="card-text pb-2">This is an example of a very good photo that yoy can post o instagram</p>
+  </div>
+</div>
+<div class="mx-auto p-3" style="width: 550px;">            
+  <div class="card mb-1" style="width:35rem">
+      <div class="card-body">
+          <h4 class="card-title">As strong as a rock..</h4>
+      </div>
+  <img src="https://fastly.picsum.photos/id/168/1920/1280.jpg?hmac=mVK82R-5FsJLUcjRsdWA1-NdN6xw6MexzmRmtqNpWUs" class="card-img-bottom" alt="...">
+              <p class="card-text p-1"><strong>204 Likes</strong></p>
+              <p class="card-text pb-2">This is an example of a very good photo that yoy can post o instagram</p>
+  </div>
+</div>
+<div class="mx-auto p-3" style="width: 550px;">            
+  <div class="card mb-1" style="width:35rem">
+      <div class="card-body">
+          <h4 class="card-title">Bike as rest...</h4>
+      </div>
+  <img src="https://fastly.picsum.photos/id/76/4912/3264.jpg?hmac=VkFcSa2Rbv0R0ndYnz_FAmw02ON1pPVjuF_iVKbiiV8" class="card-img-bottom" alt="...">
+              <p class="card-text p-1"><strong>204 Likes</strong></p>
+              <p class="card-text pb-2">This is an example of a very good photo that yoy can post o instagram</p>
+  </div>
+</div>
+<div class="mx-auto p-3" style="width: 550px;">            
+  <div class="card mb-1" style="width:35rem">
+      <div class="card-body">
+          <h4 class="card-title">Puppies in the grass..</h4>
+      </div>
+  <img src="https://fastly.picsum.photos/id/169/2500/1662.jpg?hmac=3DBeyQbiPxO88hBdhIuFPbvy2ff7cm9vmnq8lPIL9Ug" class="card-img-bottom" alt="...">
+              <p class="card-text p-1"><strong>204 Likes</strong></p>
+              <p class="card-text pb-2">This is an example of a very good photo that yoy can post o instagram</p>
+  </div>
+</div>
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
